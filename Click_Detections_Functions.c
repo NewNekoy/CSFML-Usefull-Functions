@@ -54,8 +54,8 @@ int main(void)
     while (sfRenderWindow_pollEvent(window, &event))
     {
       if (event.type == sfEvtClosed) {
-        sfDestroy_Texture(myTexture);
-        sfDestroy_Sprite(mySprite);
+        sfTexture_destroy(myTexture);
+        sfSprite_destroy(mySprite);
         sfRenderWindow_close(window);
         return 0;
       }
