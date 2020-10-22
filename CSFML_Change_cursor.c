@@ -21,7 +21,7 @@ sfRenderWindow *createMyWindow(unsigned int width, unsigned int height)
     mode.width = width;
     mode.height = height;
     mode.bitsPerPixel = 32;
-    window = sfRenderWindow_create(mode, "My_Hunter", sfClose, NULL);
+    window = sfRenderWindow_create(mode, "Name Of Window", sfClose, NULL);
     if (!window)
         return 0;
     return (window);
